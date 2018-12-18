@@ -1,0 +1,1346 @@
+db.publications.insertMany([
+{
+    "albumInfo": {
+        "name": "Angels Fall First",
+        "type": "LP",
+        "genre": ["symphonic metal", "power metal", "folk metal"],
+        "publicationYear": 1997,
+        "tags":["first album", "second best album", "nostalgic"],
+        "stars": 4
+    },
+    
+    "artist": {
+        "name":"Nightwish",
+        "members": [
+            {
+                "name": "Tarja Turunen",
+                "instruments": ["lead vocals"]
+            },
+            {
+                "name": "Tuomas Holopainen",
+                "instruments": ["piano", "synthesizers", "keyboards", "vocals"]
+            },
+            {
+                "name": "Erno Vuorinen",
+                "instruments": ["guitar"]
+            },
+            {
+                "name": "Jukka Nevalainen",
+                "instruments": ["drums", "percussion"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name": "Esa Lehtinen",
+            "instruments": ["flutes"]
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name":"Elvenpath",
+            "stars":5,
+            "trackNo": 1,
+            "length": "4:38"
+        },
+        {
+            "name":"Beauty and the beast",
+            "stars": 4,
+            "trackNo": 2,
+            "length": "6:22"
+        },
+        {
+            "name":"The Carpenter",
+            "stars": 2,
+            "trackNo": 3,
+            "length": "5:56"
+        },
+        {
+            "name":"Astral Romance",
+            "stars": 4,
+            "trackNo": 4,
+            "length": "5:11"
+        },
+        {
+            "name":"Angels Fall First",
+            "stars": 4,
+            "trackNo": 5,
+            "length": "5:34"
+        },
+        {
+            "name":"Tutankhamen",
+            "stars": 4,
+            "trackNo": 6,
+            "length": "5:30"
+        },
+        {
+            "name":"Nymphomanic Fantasia",
+            "stars": 4,
+            "trackNo": 7,
+            "length": "4:45"
+        },
+        {
+            "name":"Know Why the Nightingale Sings",
+            "stars": 3,
+            "trackNo": 8,
+            "length": "4:13"
+        },
+        {
+            "name":"Lappi pt1 - Erämaajärvi",
+            "stars": 3,
+            "trackNo": 9,
+            "length": "2:15"
+        },
+        {
+            "name":"Lappi pt2 - Witchdrums",
+            "stars": 2,
+            "trackNo": 10,
+            "length": "1:19"
+        },
+        {
+            "name":"Lappi pt3 - This Moment Is Eternity",
+            "stars": 5,
+            "trackNo": 11,
+            "length": "3:12"
+        },
+        {
+            "name":"Lappi pt4 - Etiäinen",
+            "stars": 4,
+            "trackNo": 12,
+            "length": "2:34"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "The Carpenter",
+        "type": "CD",
+        "genre": ["black metal", "heavy metal"],
+        "publicationYear": 1997,
+        "tags": ["first single", "bonus tracks"],
+        "stars": 2
+    },
+    
+    "artist": {
+        "name":"Nightwish",
+        "members": [
+            {
+                "name": "Tarja Turunen",
+                "instruments": ["lead vocals"]
+            },
+            {
+                "name": "Tuomas Holopainen",
+                "instruments": ["piano", "synthesizers", "keyboards", "vocals"]
+            },
+            {
+                "name": "Erno Vuorinen",
+                "instruments": ["guitar"]
+            },
+            {
+                "name": "Jukka Nevalainen",
+                "instruments": ["drums", "percussion"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name":"Children Of Bodom"
+        },
+        {
+            "name":"Thy Serpent"
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name": "The Carpenter",
+            "stars": 2,
+            "trackNo": 1
+        },
+        {
+            "name": "Red Light In My Eyes, Part II",
+            "stars": 3,
+            "trackNo": 2
+        },
+        {
+            "name": "Only Dust Moves...",
+            "stars": 2,
+            "trackNo": 3
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Rääväsuu ja Läski Äpärä",
+        "type": "LP",
+        "genre": ["rap", "funk"],
+        "publicationYear": 2001,
+        "tags":["suomiräp", "Rudy Rääväsuu"],
+        "stars": 3
+    },
+    
+    "artist":{
+        "name":"Ruudolf",
+        "members": [
+            {
+                "name":"Ruudolf",
+                "instruments":["vocals"]
+            }
+        ]
+    },
+    "tracks":[
+        {
+            "trackNo": 1,
+            "stars": 5,
+            "length": "3:44",
+            "name":"Sisääntulo"
+        }, 
+        {   
+            "trackNo": 2,
+            "stars": 4,
+            "length": "3:44",
+            "name":"Miami beissi"
+        },
+        {
+            "trackNo": 3,
+            "stars": 3,
+            "length": "3:44",
+            "name": "Rytmi veressä"
+        },
+        {
+            "trackNo": 4,
+            "stars": 2,
+            "length": "3:44",
+            "name":"Rääväsuu rekords"
+        },
+        {
+            "trackNo": 5,
+            "stars": 3,
+            "length": "3:44",
+            "name":"Sun kulmalla"
+        },
+        {
+            "trackNo": 6,
+            "stars": 1,
+            "length": "3:44",
+            "name": "Niinkuin lintu"
+        },
+        {
+            "trackNo": 7,
+            "stars": 4,
+            "length": "5:49",
+            "name": "Ääni kuin kerma"
+        },
+        {
+            "trackNo": 8,
+            "stars": 5,
+            "length": "4:48",
+            "name":"Tää MC"
+        },
+        {
+            "trackNo": 9,
+            "stars": 2,
+            "length": "5:47",
+            "name":"Rääväsuus rekords rahastaa"
+        },
+        {
+            "trackNo": 10,
+            "stars": 3,
+            "length": "6:00",
+            "name":"Untitled - Hidden"
+        },
+        {
+            "trackNo": 11,
+            "stars": 4,
+            "length": "4:12",
+            "name": "Untitled - Hidden"
+        }
+    ]
+},
+{
+    "albumInfo": {
+        "name": "Vaimo-CD",
+        "type": "LP",
+        "genre": ["rap", "funk", "pop", "R&B", "soul"],
+        "publicationYear": 2006,
+        "tags":["ruudolf", "suomiräp", "Rudy Rääväsuu", "Vaimo-vinyyli", "Vaimo-kassu"],
+        "stars": 5
+    },
+    "artist":{
+        "name":"Ruudolf",
+        "members": [
+            {
+                "name":"Ruudolf",
+                "instruments":["vocals"]
+            }
+        ]
+    },
+    "additionalArtists": [
+        {
+            "name":"Veppupeppu",
+            "instruments":["Vocals"]
+        }
+    ],
+    "tracks":[
+        {
+            "trackNo": 1,
+            "stars": 3,
+            "length": "2:48",
+            "name":"Miami Funk Shout Out"
+        }, 
+        {
+            "trackNo": 2,
+            "stars": 5,
+            "length": "3:57",
+            "name":"Merryhaka Soul"
+        },
+        {
+            "trackNo": 3,
+            "stars": 5,
+            "length": "3:24",
+            "name":"Missä on se vaimo?"
+        },
+        {
+            "trackNo": 4,
+            "stars": 1,
+            "length": "1:44",
+            "name":"R Kelly Party Break"
+        },
+        {
+            "trackNo": 5,
+            "stars": 5,
+            "length": "5:02",
+            "name":"Ghetto soul"
+        },
+        {
+            "trackNo": 6,
+            "stars": 5,
+            "length": "7:01",
+            "name":"Vaimoongelmii"
+        },
+        {
+            "trackNo": 7,
+            "stars": 3,
+            "length": "4:24",
+            "name":"Florida Bossanova Instrumental"
+        },
+        {
+            "trackNo": 8,
+            "stars": 2,
+            "length": "0:35",
+            "name":"Ylex RÄB"
+        },
+        {
+            "trackNo": 9,
+            "stars": 4,
+            "length": "3:07",
+            "name":"Miami Honeymuun"
+        },
+        {
+            "trackNo": 10,
+            "stars": 3,
+            "length": "0:41",
+            "name":"Mä kaipaan vaimooni"
+        },
+        {
+            "trackNo": 11,
+            "stars": 5,
+            "length": "4:25",
+            "name":"Miami Drahma"
+        },
+        {
+            "trackNo": 12,
+            "stars": 2,
+            "length": "5:48",
+            "name":"Elämä on laiffii"
+        },
+        {
+            "trackNo": 13,
+            "stars": 4,
+            "length": "1:01",
+            "name":"Whuts Luc Gotta Do With It?"
+        },
+        {
+            "trackNo": 14,
+            "stars": 5,
+            "length": "7:34",
+            "name":"Florida Funk"
+        },
+        {
+            "trackNo": 15,
+            "stars": 5,
+            "length": "5:03",
+            "name":"Ei (Jaksa enää räbäyttää) Keksitty nimee"
+        }
+    ]
+},
+{
+    "albumInfo": {
+        "name": "Kehumatta paras",
+        "type": "LP",
+        "genre": ["rap"],
+        "publicationYear": 2006,
+        "tags":["monsp"],
+        "stars": 1
+    },
+    "artist":{
+        "name":"Kemmuru",
+        "members": [
+            {
+                "name":"Aksim",
+                "instruments":["beats", "vocals"]
+            },
+            {
+                "name":"DJ J-Laini",
+                "instruments":["beats", "vocals"]
+            },
+            {
+                "name":"Jodarok",
+                "instruments":["vocals"]
+            }
+        ]
+    },
+    "additionalArtists": [
+        {
+            "name":"Hannibal",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Soppa",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Super Janne",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Seyed Ali",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Tonoslono",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Karri Koira",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Rolf Teneriffa",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Särre",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"RPK",
+            "instruments":["vocals"]
+        }
+
+    ],
+    "tracks":[
+        {
+            "trackNo": 1,
+            "stars": 3,
+            "length": "3:23",
+            "name":"Pala historiaa"
+        }, 
+        {
+            "trackNo": 2,
+            "stars": 5,
+            "length": "3:48",
+            "name":"Silti ayo"
+        },
+        {
+            "trackNo": 3,
+            "stars": 5,
+            "length": "6:24",
+            "name":"Oon 1 (skit lopussa)"
+        },
+        {
+            "trackNo": 4,
+            "stars": 1,
+            "length": "4:29",
+            "name":"Koputa puuta"
+        },
+        {
+            "trackNo": 5,
+            "stars": 5,
+            "length": "5:45",
+            "name":"Landespede"
+        },
+        {
+            "trackNo": 6,
+            "stars": 5,
+            "length": "6:47",
+            "name":"Helsingissä taas(skit lopussa)"
+        },
+        {
+            "trackNo": 7,
+            "stars": 3,
+            "length": "3:47",
+            "name":"Oon 2"
+        },
+        {
+            "trackNo": 8,
+            "stars": 2,
+            "length": "3:22",
+            "name":"Skarppaa"
+        },
+        {
+            "trackNo": 9,
+            "stars": 4,
+            "length": "4:08",
+            "name":"Bläkie, Loco & Luchi Lover"
+        },
+        {
+            "trackNo": 10,
+            "stars": 3,
+            "length": "7:49",
+            "name":"Goodbye Mister White Man"
+        },
+        {
+            "trackNo": 11,
+            "stars": 5,
+            "length": "4:33",
+            "name":"Poverty Hills st. Blues"
+        },
+        {
+            "trackNo": 12,
+            "stars": 2,
+            "length": "7:31",
+            "name":"Siis missä mentiin (skit lopussa)"
+        },
+        {
+            "trackNo": 13,
+            "stars": 4,
+            "length": "4:02",
+            "name":"Ray Charlz"
+        },
+        {
+            "trackNo": 14,
+            "stars": 5,
+            "length": "5:14",
+            "name":"Pätäkkää"
+        },
+        {
+            "trackNo": 15,
+            "stars": 5,
+            "length": "6:20",
+            "name":"Kiitos"
+        }
+    ]
+},
+{
+    "albumInfo": {
+        "name": "K.O.I.R.A.",
+        "type": "LP",
+        "genre": ["rap", "R&B"],
+        "publicationYear": 2012,
+        "tags":["monsp", "Ice dog", "Karri Dog", "Ice Dawg", "Koira"],
+        "stars": 4
+    },
+    "artist":{
+        "name":"Karri Koira",
+        "members": [
+            {
+                "name":"Karri Koira",
+                "instruments":["vocals"]
+            }
+        ]
+    },
+    "additionalArtists": [
+        {
+            "name":"Asa",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Suvi-Tuulia",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Heikki Kuula",
+            "instruments":["vocals"]
+        },
+        {
+            "name":"Ruudolf",
+            "instruments":["vocals"]
+        }
+    ],
+    "tracks":[
+        {
+            "trackNo": 1,
+            "stars": 4,
+            "length": "3:02",
+            "name":"Ne kutsuu mua koiraks"
+        }, 
+        {
+            "trackNo": 2,
+            "stars": 5,
+            "length": "4:06",
+            "name":"Lähe mun kaa"
+        },
+        {
+            "trackNo": 3,
+            "stars": 5,
+            "length": "4:26",
+            "name":"Pyöräilykypärä"
+        },
+        {
+            "trackNo": 4,
+            "stars": 2,
+            "length": "5:41",
+            "name":"Mitä meil on"
+        },
+        {
+            "trackNo": 5,
+            "stars": 4,
+            "length": "4:15",
+            "name":"H-kaupunki"
+        },
+        {
+            "trackNo": 6,
+            "stars": 5,
+            "length": "3:52",
+            "name":"Pidä kii"
+        },
+        {
+            "trackNo": 7,
+            "stars": 5,
+            "length": "4:45",
+            "name":"Ei tarkoittaa ei"
+        },
+        {
+            "trackNo": 8,
+            "stars": 3,
+            "length": "3:38",
+            "name":"Amerikankotka liitää"
+        },
+        {
+            "trackNo": 9,
+            "stars": 3,
+            "length": "3:56",
+            "name":"Kaikki tai ei mitään"
+        },
+        {
+            "trackNo": 10,
+            "stars": 1,
+            "length": "5:46",
+            "name":"Timanttisade"
+        },
+        {
+            "trackNo": 11,
+            "stars": 1,
+            "length": "0:32",
+            "name":"Interlude"
+        },
+        {
+            "trackNo": 12,
+            "stars": 2,
+            "length": "3:47",
+            "name":"Mun monneille"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Harmonia",
+        "type": "CD",
+        "genre": ["trance", "progressive trance", "psy-trance"],
+        "publicationYear": 2015,
+        "tags": ["finnish"],
+        "stars": 3
+    },
+    
+    "artist": {
+        "name": "Orkidea",
+        "members": [
+            {
+                "name": "Tapio Hakanen",
+                "instruments": ["digital audio workstation"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name": "Ben Lord",
+            "instruments": "vocals"
+        },
+        {
+            "name": "Solarstone"
+        },
+        {
+            "name": "Sami Uotila",
+            "instruments": "vocals"
+        },
+        {
+            "name": "Lowland"
+        },
+        {
+            "name": "Activa"
+        },
+        {
+            "name": "Giuseppe Ottaviani"
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name": "My Sunset",
+            "stars": 4,
+            "trackNo": 1,
+            "length": "5:18"
+        },
+        {
+            "name": "Dreamers Of Dreams",
+            "stars": 2,
+            "trackNo": 2,
+            "length": "6:02"
+        },
+        {
+            "name":"Neo Romance",
+            "stars": 2,
+            "trackNo": 3,
+            "length": "4:10"
+        },
+        {
+            "name":"P:Machinery",
+            "stars": 5,
+            "trackNo": 4,
+            "length": "5:26"
+        },
+        {
+            "name":"Revolution Industrielle",
+            "stars": 3,
+            "trackNo": 5,
+            "length": "5:22"
+        },
+        {
+            "name":"Slowmotion III",
+            "stars": 3,
+            "trackNo": 6,
+            "length": "5:53"
+        },
+        {
+            "name":"Strange World",
+            "stars": 5,
+            "trackNo": 7,
+            "length": "5:29"
+        },
+        {
+            "name":"Glowing Skies",
+            "stars": 3,
+            "trackNo": 8,
+            "length": "5:42"
+        },
+        {
+            "name":"Nana",
+            "stars": 2,
+            "trackNo": 9,
+            "length": "4:53"
+        },
+        {
+            "name":"Redemption",
+            "stars": 4,
+            "trackNo": 10,
+            "length": "4:49"
+        },
+        {
+            "name":"Purity",
+            "stars": 2,
+            "trackNo": 11,
+            "length": "5:33"
+        },
+        {
+            "name":"Z21",
+            "stars": 3,
+            "trackNo": 12,
+            "length": "5:13"
+        },
+        {
+            "name":"North Star",
+            "stars": 2,
+            "trackNo": 13,
+            "length": "4:39"
+        },
+        {
+            "name":"Harmonia",
+            "stars": 5,
+            "trackNo": 14,
+            "length": "6:15"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Unity",
+        "type": "Vinyl",
+        "genre": ["trance", "progressive trance"],
+        "publicationYear": 1999,
+        "tags": ["classic", "epic", "first release", "finnish"],
+        "stars": 5
+    },
+    
+    "artist": {
+        "name":"Orkidea",
+        "members": [
+            {
+                "name": "Tapio Hakanen",
+                "instruments": ["digital audio workstation"]
+            }
+        ]
+    },
+    
+    "tracks": [
+        {
+            "name": "Unity",
+            "stars": 5,
+            "trackNo": 1,
+            "length": "10:13"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Yearzero",
+        "type": "Vinyl",
+        "genre": ["trance"],
+        "publicationYear": 2007,
+        "tags": ["progressive", "classic"],
+        "stars": 5
+    },
+    
+    "artist": {
+        "name": "Orkidea",
+        "members": [
+            {
+                "name": "Tapio Hakanen",
+                "instruments": ["digital audio workstation"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name": "Andy Moor"
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name": "Yearzero (Andy Moor's First Light Mix)",
+            "stars": 5,
+            "trackNo": 1
+        },
+        {
+            "name": "Yearzero (Orkidea's Metaverse Mix)",
+            "stars": 5,
+            "trackNo": 2
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Empire",
+        "type": "CD",
+        "genre": ["trance", "progressive trance", "downtempo", "pop"],
+        "publicationYear": 2010,
+        "tags":["finnish", "cool", "young artists"],
+        "stars": 4
+    },
+    
+    "artist": {
+        "name":"Super8 & Tab",
+        "members": [
+            {
+                "name": "Super8 (Miika Juhani Eloranta)",
+                "instruments": ["digital audio workstation"]
+            },
+            {
+                "name": "DJ Tab (Janne Mikael Mansnerus)",
+                "instruments": ["digital audio workstation"]
+            }
+        ]
+    },
+    
+    "tracks": [
+        {
+            "name":"Slow To Learn",
+            "stars": 3,
+            "trackNo": 1,
+            "length": "6:50"
+        },
+        {
+            "name":"Empire",
+            "stars": 4,
+            "trackNo": 2,
+            "length": "6:41"
+        },
+        {
+            "name":"Black Is The New Yellow",
+            "stars": 3,
+            "trackNo": 3,
+            "length": "6:49"
+        },
+        {
+            "name":"My Enemy",
+            "stars": 4,
+            "trackNo": 4,
+            "length": "5:46"
+        },
+        {
+            "name":"Perfect Day",
+            "stars": 3,
+            "trackNo": 5,
+            "length": "5:13"
+        },
+        {
+            "name":"Eternal Sequence",
+            "stars": 4,
+            "trackNo": 6,
+            "length": "5:51"
+        },
+        {
+            "name":"Good Times",
+            "stars": 5,
+            "trackNo": 7,
+            "length": "6:51"
+        },
+        {
+            "name":"Mercy",
+            "stars": 3,
+            "trackNo": 8,
+            "length": "7:31"
+        },
+        {
+            "name":"Irufushi",
+            "stars": 2,
+            "trackNo": 9,
+            "length": "5:51"
+        },
+        {
+            "name":"Bliss",
+            "stars": 4,
+            "trackNo": 10,
+            "length": "4:06"
+        },
+        {
+            "name":"Free Love",
+            "stars": 3,
+            "trackNo": 11,
+            "length": "4:05"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "That's the spirit",
+        "type": "LP",
+        "genre": ["electronic", "rock"],
+        "publicationYear": 2015,
+        "tags": ["british"],
+        "stars": 5
+    },
+    
+    "artist": {
+        "name":"Bring Me The Horizon",
+        "members": [
+            {
+                "name": "Oliver Sykes",
+                "instruments": ["lead vocals"]
+            },
+            {
+                "name": "Lee Malia",
+                "instruments": ["guitar", "backing vocals"]
+            },
+            {
+                "name": "Jordan Fish",
+                "instruments": ["programming", "keyboards", "vocals", "percussion"]
+            },
+            {
+                "name": "Matt Kean",
+                "instruments": ["bass"]
+            },
+            {
+                "name": "Matt Nicholls",
+                "instruments": ["drums", "percussion"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name": "Will Harvey",
+            "instruments": ["violins"]
+        },
+        {
+            "name": "Maddie Cutter",
+            "instruments": ["cellos"]
+        },
+        {
+            "name": "Emma Fish",
+            "instruments": ["vocals"]
+        },
+        {
+            "name": "Mike Bissett",
+            "instruments": ["horns"]
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name": "Doomed",
+            "stars": 4,
+            "trackNo": 1,
+            "length": "4:34"
+        },
+        {
+            "name": "Happy Song",
+            "stars": 5,
+            "trackNo": 2,
+            "length": "3:59"
+        },
+        {
+            "name":"Throne",
+            "stars": 5,
+            "trackNo": 3,
+            "length": "3:11"
+        },
+        {
+            "name":"True Friends",
+            "stars": 5,
+            "trackNo": 4,
+            "length": "3:52"
+        },
+        {
+            "name":"Follow you",
+            "stars": 5,
+            "trackNo": 5,
+            "length": "3:51"
+        },
+        {
+            "name":"What You Need",
+            "stars": 4,
+            "trackNo": 6,
+            "length": "4:12"
+        },
+        {
+            "name":"Avalanche",
+            "stars": 5,
+            "trackNo": 7,
+            "length": "4:22"
+        },
+        {
+            "name":"Run",
+            "stars": 3,
+            "trackNo": 8,
+            "length": "3:42"
+        },
+        {
+            "name":"Drown",
+            "stars": 5,
+            "trackNo": 9,
+            "length": "3:42"
+        },
+        {
+            "name":"Blasphemy",
+            "stars": 4,
+            "trackNo": 10,
+            "length": "4:35"
+        },
+        {
+            "name":"Oh No",
+            "stars": 5,
+            "trackNo": 11,
+            "length": "5:01"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Suicide Season",
+        "type": "LP",
+        "genre": ["deathcore"],
+        "publicationYear": 2008,
+        "tags": ["british", "deathcore"],
+        "stars": 5
+    },
+    
+    "artist": {
+        "name":"Bring Me The Horizon",
+        "members": [
+            {
+                "name": "Oliver Sykes",
+                "instruments": ["lead vocals", "keyboards", "programming"]
+            },
+            {
+                "name": "Lee Malia",
+                "instruments": ["lead guitar"]
+            },
+            {
+                "name": "Curtis Ward",
+                "instruments": ["rhythm guitar"]
+            },
+            {
+                "name": "Matt Kean",
+                "instruments": ["bass"]
+            },
+            {
+                "name": "Matt Nicholls",
+                "instruments": ["drums"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name": "JJ Peters",
+            "instruments": ["vocals"]
+        },
+        {
+            "name": "Sam Carter",
+            "instruments": ["vocals"]
+        },
+        {
+            "name": "The Secret Handshake",
+            "instruments": ["samples"]
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name": "The Comedown",
+            "stars": 5,
+            "trackNo": 1,
+            "length": "4:09"
+        },
+        {
+            "name":"Chelsea Smile",
+            "stars": 5,
+            "trackNo": 2,
+            "length": "5:02"
+        },
+        {
+            "name":"It Was Written in Blood",
+            "stars": 3,
+            "trackNo": 3,
+            "length": "4:02"
+        },
+        {
+            "name":"Death Breath",
+            "stars": 5,
+            "trackNo": 4,
+            "length": "4:20"
+        },
+        {
+            "name":"Football Season Is Over",
+            "stars": 4,
+            "trackNo": 5,
+            "length": "1:56"
+        },
+        {
+            "name":"Sleep with One Eye Open",
+            "stars": 4,
+            "trackNo": 6,
+            "length": "4:16"
+        },
+        {
+            "name":"Diamonds Aren't Forever",
+            "stars": 4,
+            "trackNo": 7,
+            "length": "3:48"
+        },
+        {
+            "name": "The Sadness Will Never End",
+            "stars": 5,
+            "trackNo": 8,
+            "length": "5:22"
+        },
+        {
+            "name":"No Need For Introductions, I've Read About Girls Like You On The Backs Of Toilet Doors",
+            "stars": 4,
+            "trackNo": 9,
+            "length": "1:00"
+        },
+        {
+            "name":"Suicide Season",
+            "stars": 5,
+            "trackNo": 10,
+            "length": "8:17"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Still Searching",
+        "type": "LP",
+        "genre": ["emo", "post-hardcore"],
+        "publicationYear": 2006,
+        "tags": ["american", "vagrant records"],
+        "stars": 5
+    },
+    
+    "artist": {
+        "name": "Senses Fail",
+        "members": [
+            {
+                "name": "James \"Buddy\" Nielsen",
+                "instruments": ["lead vocals"]
+            },
+            {
+                "name": "Garret Zablocki",
+                "instruments": ["guitar", "backing vocals"]
+            },
+            {
+                "name": "Dan Trapp",
+                "instruments": ["drums"]
+            },
+            {
+                "name": "Heath Saraceno",
+                "instruments": ["guitar", "vocals"]
+            },
+            {
+                "name": "Mike Glita",
+                "instruments": ["bass guitar", "backing vocals"]
+            }
+        ]
+    },
+    
+    "tracks": [
+        {
+            "name": "The Rapture",
+            "stars": 4,
+            "trackNo": 1,
+            "length": "1:57"
+        },
+        {
+            "name": "Bonecrusher",
+            "stars": 5,
+            "trackNo": 2,
+            "length": "2:33"
+        },
+        {
+            "name": "Sick or Sane (Fifty for a Twenty)",
+            "stars": 5,
+            "trackNo": 3,
+            "length": "2:45"
+        },
+        {
+            "name": "Can't Be Saved",
+            "stars": 3,
+            "trackNo": 4,
+            "length": "3:07"
+        },
+        {
+            "name": "Calling All Cars",
+            "stars": 5,
+            "trackNo": 5,
+            "length": "3:23"
+        },
+        {
+            "name": "Shark Attack",
+            "stars": 5,
+            "trackNo": 6,
+            "length": "2:54"
+        },
+        {
+            "name": "Still Searching",
+            "stars": 4,
+            "trackNo": 7,
+            "length": "4:18"
+        },
+        {
+            "name": "To All the Crowded Rooms",
+            "stars": 4,
+            "trackNo": 8,
+            "length": "3:05"
+        },
+        {
+            "name": "Lost and Found",
+            "stars": 3,
+            "trackNo": 9,
+            "length": "3:50"
+        },
+        {
+            "name": "Every Day Is a Struggle",
+            "stars": 3,
+            "trackNo": 10,
+            "length": "3:04"
+        },
+        {
+            "name":"All the Best Cowboys Have Daddy Issues",
+            "stars": 5,
+            "trackNo": 11,
+            "length": "4:05"
+        },
+        {
+            "name":"Negative Space",
+            "stars": 4,
+            "trackNo": 12,
+            "length": "1:22"
+        },
+        {
+            "name":"The Priest and the Matador",
+            "stars": 5,
+            "trackNo": 12,
+            "length": "4:21"
+        }
+    ]
+},
+
+{
+    "albumInfo": {
+        "name": "Firestone",
+        "type": "Single",
+        "genre": ["electronic", "deep house", "tropical house"],
+        "publicationYear": 2014,
+        "tags": ["norwegian"],
+        "stars": 5
+    },
+    
+    "artist": {
+        "name": "Kygo",
+        "members": [
+            {
+                "name": "Kygo",
+                "instruments": ["digital audio workstation", "keyboards", "piano"]
+            }
+        ]
+    },
+    
+    "additionalArtists": [
+        {
+            "name": "Conrad Sewell",
+            "instruments": ["vocals"]
+        }
+    ],
+    
+    "tracks": [
+        {
+            "name":"Firestone",
+            "stars": 5,
+            "trackNo": 1,
+            "length": "4:34"
+        },
+        {
+            "name":"Firestone (Live Acoustic Version)",
+            "stars": 4,
+            "trackNo": 2,
+            "length": "3:48"
+        }
+    ]
+}]);

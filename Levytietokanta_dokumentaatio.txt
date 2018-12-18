@@ -1,0 +1,192 @@
+--------------------------------------------
+M O N G O D B - L E V Y T I E T O K A N T A
+--------------------------------------------
+
+Tekijät:
+
+Tuukka Virtanen
+Viljami Ketola
+Mikael Suominen
+
+
+I N D E K S I T
+
+Tietokannassa käytetään kahta seuraavaa indeksiä:
+
+db.publications.createIndex( { "albumInfo.name": 1 } );
+db.publications.createIndex( { "artist.name": 1 } );
+
+Indeksien koko:
+
+db.publications.totalIndexSize();
+- ennen indeksointia: 32768
+- indeksoinnin jälkeen: 65536
+
+
+H A U T
+
+1. Mitä levyjä kokoelmasta löytyy?
+
+db.publications.find(
+    {}, {"albumInfo.name":1,"artist.name":1, "_id": 0}
+).pretty();
+
+2. Mitä yhtyeitä/sooloartisteja löytyy?
+
+db.publications.distinct("artist.name");
+
+3. Mitä muusikoita löytyy?
+
+db.publications.aggregate(
+    { 
+        $project: { 
+            musician: { 
+                $setUnion: [ 
+                    "$artist.members.name", "$additionalArtists.name" 
+                ] 
+            }, 
+            _id: 0 
+        } 
+    },
+    { $unwind: "$musician" },
+    { $group: { _id: null , musician: { $addToSet: "$musician" } } }
+).pretty();
+
+4. Mitä levyjä tietyltä yhtyeeltä/artistilta löytyy?
+
+db.publications.find(
+    { "artist.name": "Orkidea" },
+    { "albumInfo.name": 1, "artist.name": 1, "_id": 0 }
+).pretty();
+
+5. Millä levyillä tietty muusikko on soittanut ja mitä instrumenttia? Otetaan
+huomioon oman bändin levyt ja myös levyt, joilla muusikko on ollut vierailijana
+(additional artist).
+***EI TOIMI TÄSMÄLLEEN OIKEIN***
+
+5. a) Tällä haulla saadaan oikea tieto näkyviin, mutta mukana tulee turhaa dataa
+aika kasa.
+
+db.publications.find(
+    {
+        $or: [ 
+            { "artist.name": "Karri Koira"}, 
+            {"additionalArtists.name": "Karri Koira" } 
+        ]
+    }, 
+    { 
+        "albumInfo.name": 1, 
+        "artist.members.instruments": 1, 
+        "artist.members.name": 1, 
+        "additionalArtists.instruments": 1, 
+        "additionalArtists.name": 1, 
+        "_id": 0
+    }
+).pretty();
+
+5. b) Tässä yksi lukuisista yrityksistä tehdä haku. MongoDB antaa 
+virheilmoituksen.
+
+db.publications.aggregate([
+	{
+		$group:{
+			_id:"albumInfo.name"
+		}
+	},
+	{
+		$project: {
+			_id: 0,
+			"albumInfo.name": 1,
+			musician:{
+				$setUnion:["$artist.members","$additionalArtists"],
+                $filter: {
+                    input: "$musician",
+                    as: "member",
+                    cond: { $eq: ["$$member.name", "Tarja Turunen"]}
+                }
+            },
+			"musician.instruments": 1
+        }
+    },
+	{
+		$match: {"musician.name":"Tarja Turunen"}
+	}	
+]).pretty();
+
+6. Missä yhtyeissä tietty muusikko on soittanut?
+
+db.publications.find(
+	{"artist.members.name":"Tuomas Holopainen"},
+	{"artist.name": 1, "_id": 0}
+).pretty();
+
+7. Millä levyillä tietty laulu on? (Voi olla esim. eri yhtyeiden esittämänä tai 
+saman yhtyeen eri levyillä.)
+
+db.publications.find(
+	{"tracks.name":"The Carpenter"},
+	{"albumInfo.name": 1, "_id": 0}
+).pretty();
+
+8. Ryhmittele levyt niiden genren mukaan ja näytä ryhmien koko suurimmasta
+pienimpään.
+
+db.publications.aggregate(
+    [
+        { $unwind: "$albumInfo.genre" },
+        { $sortByCount: "$albumInfo.genre" }
+    ]
+).pretty();
+
+9. Lajittele levyt julkaisuajan perusteella.
+
+db.publications.find(
+    {}, { "albumInfo.name": 1, "albumInfo.publicationYear": 1, "_id": 0 }
+).sort( 
+    { "albumInfo.publicationYear": 1 } 
+);
+
+10. Ryhmittele levyt niiden tägien mukaan ja näytä ryhmien koko
+suurimmasta pienimpään.
+
+db.publications.aggregate(
+    [
+        { $unwind: "$albumInfo.tags" },
+        { $sortByCount: "$albumInfo.tags" }
+    ]
+).pretty();
+
+11. Lajittele yksittäiset kappaleet tähtiarvion mukaan.
+
+db.publications.aggregate(
+    [
+        { $match: { "albumInfo.name": "Empire" } },
+		{ $unwind: "$tracks" },
+        { $sort: { "tracks.stars": -1 } },
+        { $project: 
+            { 
+                "albumInfo.name": 1, 
+                "tracks.name": 1, 
+                "tracks.stars": 1,
+                "tracks.trackNo": 1,
+                "_id": 0 
+            } 
+        }
+    ]
+).pretty();
+
+12. Lajittele levyt tähtiarvion mukaan parhaimmasta huonoimpaan.
+
+db.publications.find(
+    {}, { "albumInfo.name": 1, "albumInfo.stars": 1, "_id": 0 }
+).sort( 
+    { "albumInfo.stars": -1 } 
+);
+
+13. Etsi kaikki yhtyeet, joissa Karri Koira -niminen artisti esiintyy pääosassa 
+tai vierailijana:
+
+db.publications.find( { $or: [
+    { "artist.name": "Karri Koira" },
+    { "additionalArtists.name": "Karri Koira" }
+] }, { "artist.name": 1, "additionalArtists.name": 1, "_id": 0 } ).pretty();
